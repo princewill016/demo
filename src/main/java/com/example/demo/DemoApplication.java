@@ -21,7 +21,7 @@ public class DemoApplication {
 		p.setLastName("bby");
 		p.setFavColor("gold");
 		// s.save(p);
-		p =(pojo) s.get(pojo.class, 3);
+		p =(pojo) s.get(pojo.class, 2);
 		transaction.commit();
 		System.out.println("Retrieved entity: " + p.toString());
 
