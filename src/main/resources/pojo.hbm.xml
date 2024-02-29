@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.example.demo">
+
+    <!-- Mapping for the pojo class -->
+    <class name="pojo" table="grill">
+        <id name="id" type="int">
+        <!-- effected changes on this line below -->
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="age" column="age" type="int" />
+        <property name="FirstName" column="FirstName" type="string" />
+        <property name="LastName" column="LastName" type="string" />
+        <property name="FavColor" column="FavColor" type="string" />
+    </class>
+
+</hibernate-mapping>
