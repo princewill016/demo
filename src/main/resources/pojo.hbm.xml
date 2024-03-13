@@ -4,7 +4,7 @@
 <hibernate-mapping package="com.example.demo">
 
     <!-- Mapping for the pojo class -->
-    <class name="pojo" table="grill">
+    <class name="pojo" table="details">
         <id name="id" type="int">
         <!-- effected changes on this line below -->
             <column name="id" />
@@ -13,7 +13,7 @@
         <property name="age" column="age" type="int" />
         <property name="FirstName" column="FirstName" type="string" />
         <property name="LastName" column="LastName" type="string" />
-        <property name="FavColor" column="FavColor" type="string" />
+        <property name="gender" column="gender" type="char" />
     </class>
 
 </hibernate-mapping>

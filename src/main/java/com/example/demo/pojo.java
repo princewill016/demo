@@ -17,7 +17,7 @@ public class pojo {
     private int age;
     private String firstName;
     private String lastName;
-    private String favColor;
+    private char gender;
 
     public int getId() {
         return id;
@@ -51,18 +51,18 @@ public class pojo {
         this.lastName = lastName;
     }
 
-    public String getFavColor() {
-        return favColor;
+    public char getGender() {
+        return gender;
     }
 
-    public void setFavColor(String favColor) {
-        this.favColor = favColor;
+    public void setGender(char gender) {
+        this.gender = gender;
     }
 
     @Override
     public String toString() {
         return "pojo [id=" + id + ", age=" + age + ", firstName=" + firstName + ", lastName=" + lastName + ", favColor="
-                + favColor + "]";
+                + gender + "]";
     }
 
 }

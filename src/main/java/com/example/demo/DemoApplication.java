@@ -15,16 +15,14 @@ public class DemoApplication {
 		Transaction transaction = s.beginTransaction();
 
 		pojo p = new pojo();
-		// p.setId(6);
-		p.setAge(22);
-		p.setFirstName("angel");
-		p.setLastName("bby");
-		p.setFavColor("gold");
+		// p.setAge(26);
+		// p.setFirstName("Bright");
+		// p.setLastName("peter");
+		// p.setGender('M');
 		// s.save(p);
 		p =(pojo) s.get(pojo.class, 2);
-		transaction.commit();
 		System.out.println("Retrieved entity: " + p.toString());
-
-
+		transaction.commit();
+		
 	}
 }
